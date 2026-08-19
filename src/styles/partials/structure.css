@@ -19,6 +19,25 @@
   place-items: center;
 }
 
+.hero{
+  width: 80vw;
+  margin-left: calc(50% - 40vw);
+  margin-right: calc(50% - 40vw);
+  margin-top: calc(-1 * var(--space-5));
+  margin-bottom: var(--space-5);
+  height: 60vh;
+  overflow: hidden;
+}
+.hero__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (min-width: 768px){
+  .hero{ height: 85vh; }
+}
+
 .prose h1{ font-size: 28px; letter-spacing: -0.02em; margin: 0 0 var(--space-3); }
 .prose h2{ font-size: 18px; margin: var(--space-5) 0 var(--space-2); }
 .prose p{ margin: 0 0 var(--space-3); color: var(--fg); }
